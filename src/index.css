@@ -59,18 +59,9 @@ button {
 	font: inherit;
 }
 
-html {
-	height: 100%;
-	scrollbar-gutter: stable;
-}
-
 html,
 :has(:target) {
 	scroll-behavior: smooth;
-}
-
-body {
-	line-height: 1.5;
 }
 
 a:where([class]) {
@@ -425,30 +416,38 @@ svg * {
 		max-width: 300px;
 	}
 
+	.calendar__month {
+		font-size: 34px;
+	}
+
+	.days-list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		min-width: 420px;
+	}
+
+	.day-item {
+		font-size: 20px;
+	}
+
 	.calendar {
-		grid-template-columns: repeat(7, 40px) !important;
-		grid-template-rows: repeat(5, 35px) !important;
+		display: grid;
+		grid-template-columns: repeat(7, 60px) !important;
+		grid-template-rows: repeat(5, 50px) !important;
 	}
 
 	.calendar__cell {
 		min-height: 32px;
 		padding: 4px;
-		font-size: 14px;
-		width: 40px !important;
-		height: 35px !important;
+		font-size: 20px;
+		width: 60px;
+		height: 50px;
 	}
 
 	.calendar__cell--changed {
 		min-width: auto;
 		font-size: 10px;
-	}
-
-	.days-list {
-		font-size: 14px;
-		padding: 6px 18px;
-		justify-content: space-between;
-		display: flex;
-		max-width: 320px;
 	}
 }
 
@@ -486,23 +485,6 @@ svg * {
 		width: 45px;
 		text-align: center;
 		flex-shrink: 0;
-	}
-}
-
-@media (max-width: 470px) {
-	.days-list {
-		max-width: 320px;
-		font-size: 11px;
-		padding: 6px 0;
-	}
-
-	.days-list li {
-		width: 40px;
-	}
-
-	.remove-cells {
-		min-width: 314px;
-		margin: 0 auto;
 	}
 }
 
