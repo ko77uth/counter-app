@@ -1,0 +1,14 @@
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--color-white);
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+.modal .button {
+	max-width: 266.45px;
+}
