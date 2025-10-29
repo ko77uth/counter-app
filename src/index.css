@@ -423,12 +423,11 @@ svg * {
 	.days-list {
 		display: flex;
 		justify-content: space-between;
-		width: 100%;
-		min-width: 420px;
+		min-width: 400px;
 	}
 
 	.day-item {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.calendar {
