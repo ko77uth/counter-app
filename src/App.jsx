@@ -177,7 +177,7 @@ const App = () => {
 			>
 				Очистить ячейки
 			</button>
-			<h2 className='total-moneys'>Зарплата: {totalMoneys.toFixed(2)}</h2>
+			<h2 className='total-moneys'>Зарплата: {totalMoneys.toFixed(2)}₽</h2>
 			{showModal && (
 				<Modal
 					onClick={() => {
