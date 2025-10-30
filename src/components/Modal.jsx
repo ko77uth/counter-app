@@ -22,9 +22,6 @@ const Modal = props => {
 	function ndTypeChangeListeneer(e) {
 		setNdType(e.target.value)
 	}
-	function badCountChangeListeneer(e) {
-		setBadCount(e.target.value)
-	}
 
 	function onSubmitRegular() {
 		if (sotka.trim() === '' && ndType.trim() === '' && stType.trim() === '') {
