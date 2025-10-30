@@ -436,23 +436,21 @@ svg * {
 
 	.calendar {
 		display: grid;
-		grid-template-columns: repeat(7, 60px) !important;
-		grid-template-rows: repeat(5, 50px) !important;
+		grid-template-columns: repeat(7, 40px) !important;
+		grid-template-rows: repeat(5, 35px) !important;
 	}
 
 	.calendar__cell {
 		padding: 4px;
 		font-size: 16px !important;
-		width: 60px !important;
-		height: 50px !important;
+		width: 40px !important;
+		height: 35px !important;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.calendar__cell--changed {
-		font-size: 14px !important;
-		width: 60px;
-		height: 50px;
+		font-size: 12px !important;
 		border: 1px solid var(--color-black);
 	}
 	.remove-cells {
