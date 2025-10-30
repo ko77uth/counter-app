@@ -423,10 +423,9 @@ svg * {
 	}
 
 	.days-list {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		max-width: 400px;
+		display: grid;
+		grid-template-columns: repeat(7, 40px) !important;
+		grid-template-rows: repeat(5, 35px) !important;
 	}
 
 	.day-item {
