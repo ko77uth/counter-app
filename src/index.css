@@ -472,7 +472,7 @@ svg * {
 		display: grid;
 		grid-template-columns: repeat(7, 8px);
 		font-size: 14px;
-		grid-template-rows: 30px;
+		grid-template-rows: 20px;
 	}
 }
 
