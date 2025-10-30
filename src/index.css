@@ -250,7 +250,6 @@ svg * {
 	background-color: transparent;
 	width: 100%;
 	height: 100vh;
-	border: 2px dashed var(--color-gray-3);
 }
 
 .calendar__cell:active {
