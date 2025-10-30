@@ -223,16 +223,6 @@ svg * {
 	margin: 100px auto;
 }
 
-.days-list {
-	display: flex;
-	gap: 33px;
-	padding: 10px 10px 12px 15px;
-	font-weight: 700;
-	color: var(--color-gray-3);
-	border-bottom: 1px solid var(--color-gray-3);
-	box-shadow: 0 4px 12px -5px #0000002e;
-}
-
 .calendar {
 	display: grid;
 	grid-template-columns: repeat(7, 45px);
@@ -354,15 +344,6 @@ svg * {
 		transform: none !important;
 	}
 
-	.days-list {
-		display: flex;
-		justify-content: space-between;
-		max-width: 365px;
-		padding: 8px 15px;
-		font-size: 14px;
-		gap: 40px;
-	}
-
 	.info {
 		width: 100%;
 		max-width: 350px;
@@ -413,16 +394,6 @@ svg * {
 		margin-bottom: 20px;
 	}
 
-	.days-list {
-		display: grid;
-		grid-template-columns: repeat(7, 20px);
-		grid-template-rows: 30px;
-	}
-
-	.day-item {
-		font-size: 15px;
-	}
-
 	.calendar {
 		display: grid;
 		grid-template-columns: repeat(7, 40px) !important;
@@ -450,11 +421,6 @@ svg * {
 }
 
 @media (max-width: 320px) {
-	.days-list {
-		gap: 29px;
-		max-width: 280px;
-	}
-
 	.calendar {
 		grid-template-columns: repeat(7, 60px);
 		grid-template-rows: repeat(5, 50px);
@@ -464,15 +430,6 @@ svg * {
 		font-size: 12px;
 		width: 60px;
 		height: 50px;
-	}
-}
-
-@media (max-width: 768px) {
-	.days-list {
-		display: grid;
-		grid-template-columns: repeat(7, 8px);
-		font-size: 14px;
-		grid-template-rows: 20px;
 	}
 }
 
