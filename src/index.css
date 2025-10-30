@@ -429,8 +429,7 @@ svg * {
 	}
 
 	.day-item {
-		font-size: 20px;
-		text-align: left;
+		font-size: 15px;
 	}
 
 	.calendar {
@@ -454,6 +453,8 @@ svg * {
 	}
 	.remove-cells {
 		font-size: 14px;
+		max-width: 350px;
+		margin: 0 auto;
 	}
 	.total-moneys {
 		font-size: 22px;
