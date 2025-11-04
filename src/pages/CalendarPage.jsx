@@ -108,9 +108,7 @@ const CalendarPage = () => {
 
 	return (
 		<div className='calendar'>
-			<h1 className='calendar__month'>
-				{month} {year}
-			</h1>
+			<h1 className='calendar__month'>{month}</h1>
 			<div className='calendar__body'>
 				{calendarDays.map(day => (
 					<CalendarCell
@@ -157,7 +155,8 @@ const CalendarPage = () => {
 			>
 				<h1 className='modal__title'>Вы уверены?</h1>
 				<p className='modal__description'>
-					При согласии очистятся все ячейки. <br /> Процесс нельзя будет отменить.
+					При согласии очистятся все ячейки. <br /> Процесс нельзя будет
+					отменить.
 				</p>
 				<button
 					className='button'

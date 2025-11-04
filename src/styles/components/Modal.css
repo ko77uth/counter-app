@@ -22,7 +22,7 @@
 	width: 350px;
 	height: 450px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 10px;
 	padding-inline: 40px;
 	row-gap: 30px;
 	border-radius: var(--border-radius);
@@ -41,5 +41,5 @@
 }
 
 .modal__container.activeModal {
-	transform: translateY(100px);
+	transform: translateY(80px);
 }
