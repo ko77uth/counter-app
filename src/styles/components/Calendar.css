@@ -1,0 +1,98 @@
+.calendar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.calendar__month {
+	color: var(--color-dark-1);
+	user-select: none;
+}
+
+.calendar__body {
+	display: grid;
+	grid-template-columns: repeat(7, 57px);
+	grid-template-rows: repeat(4, 57px);
+	user-select: none;
+}
+
+.calendar__cell {
+	width: 57px;
+	height: 57px;
+	border: none;
+	border-radius: 500px;
+	background-color: var(--color-white);
+	position: relative;
+}
+
+.cell__day {
+	font-size: 20px;
+	color: var(--color-dark-1);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 14px;
+}
+.other-moth__cell {
+	color: var(--color-gray-4);
+	cursor: auto;
+	border: none;
+	background-color: var(--color-white);
+	font-size: 20px;
+	width: 57px;
+	height: 57px;
+}
+
+.calendar__changed-cell {
+	display: flex;
+	background-color: var(--color-dark-1);
+	border: none;
+	border-radius: 100px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.total-moneys__title {
+	font-size: 24px;
+	color: var(--color-dark-1);
+}
+
+.cell__small-day {
+	font-size: 11px;
+	color: var(--color-gray-3);
+	font-weight: 800;
+}
+
+.cell__count {
+	font-size: 12.5px;
+	color: var(--color-white);
+	border-radius: 300px;
+}
+
+.empty-count {
+	position: absolute;
+	font-size: 0;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+.gadgets__wrapper {
+	display: flex;
+	gap: 20px;
+}
+
+.remove-all__button {
+	border: 1px solid var(--color-dark-1);
+	background-color: var(--color-dark-1);
+	color: var(--color-white);
+	font-weight: 400;
+	font-size: 16px;
+	border-radius: var(--border-radius);
+	padding: 8px 40px;
+}

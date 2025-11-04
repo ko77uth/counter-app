@@ -1,0 +1,123 @@
+.calculator {
+	position: relative;
+	margin: 0 auto;
+}
+
+.calculator__body {
+	width: 360px;
+	margin: 0 auto;
+}
+
+.calculator-counter {
+	font-size: 42px;
+	margin: 0 auto;
+	font-weight: 600;
+	width: 350px;
+	max-width: 400px;
+	text-align: end;
+	border-bottom: 1px solid var(--color-gray-3);
+	display: flex;
+	flex-direction: column;
+	margin-top: 130px;
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+.calculator-counter-pv {
+	position: static;
+	margin-top: -80px;
+	margin-right: 40px;
+	color: var(--color-gray-4);
+	font-size: 22px;
+}
+
+.calculator-counter-fv {
+	font-size: 42px;
+	color: var(--color-dark-1);
+}
+
+.calculator-actions__list {
+	display: flex;
+	max-height: 80px;
+	align-items: start;
+	position: relative;
+}
+
+.calculator-actions__list.--1 {
+	position: relative;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 350px;
+}
+
+.calculator-actions__list.--2 {
+	flex-direction: column;
+	justify-self: end;
+	gap: 50px;
+	margin-top: 30px;
+}
+
+.calculator-actions__item {
+	padding: 14px;
+	border-radius: 50px;
+	border: none;
+	transition: 0.15s;
+	font-size: 22px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator-actions__item-button {
+	border: none;
+	background-color: transparent;
+}
+
+.calculator-actions__item:active,
+.numbers__button:active {
+	background-color: var(--color-gray-3);
+	opacity: 0.7;
+}
+
+.add-comma-button {
+	position: absolute;
+	top: 620px;
+}
+
+.equal-button {
+	background-color: var(--color-white);
+	position: absolute;
+	right: 5px;
+	top: 327px;
+	padding-block: 13px;
+	padding-bottom: 15px;
+	padding-inline: 16px;
+	border: 1px solid var(--color-black);
+	border-radius: 500px;
+	padding: 18px;
+}
+
+.equal-button:active {
+	background-color: var(--color-dark-1);
+	color: var(--color-white);
+}
+
+.numbers__list {
+	display: flex;
+	width: 274px;
+	flex-wrap: wrap;
+	row-gap: 58px;
+	column-gap: 50px;
+	margin-top: -76px;
+	margin-left: 1px;
+	justify-content: center;
+}
+
+.numbers__button {
+	border: none;
+	font-size: 28px;
+	width: 50px;
+	height: 50px;
+	border-radius: 500px;
+	background-color: var(--color-white);
+}
